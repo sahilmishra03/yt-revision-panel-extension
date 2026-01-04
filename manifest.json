@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YT Playlist Revision Marker",
+  "version": "1.0",
+  "description": "Mark playlist videos for revision on YouTube",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
