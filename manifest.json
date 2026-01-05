@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YT Playlist Revision Marker",
+  "name": "YT Revision Panel",
   "version": "1.0",
-  "description": "Mark playlist videos for revision on YouTube",
+  "description": "Mark and revise YouTube playlist videos with timestamps",
   "permissions": ["storage"],
   "content_scripts": [
     {
