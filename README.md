@@ -108,4 +108,4 @@ The extension version is managed via `manifest.json`.
 
 ---
 
-Built to make learning from YouTube **organized, efficient, and stress-free** 💡
+Built to make learning from YouTube **organized, efficient, and stress-free** 💡    
