@@ -76,8 +76,18 @@ The extension is now ready to use.
 
 ```
 yt-revision-panel/
+├── assets/
+│   └── logo-mark.png
+├── icons/
+│   ├── icon-16.png
+│   ├── icon-32.png
+│   ├── icon-48.png
+│   ├── icon-128.png
+│   └── favicon-*.png
 ├── manifest.json
 ├── content.js
+├── index.html
+├── site.webmanifest
 └── screenshots/
 ```
 

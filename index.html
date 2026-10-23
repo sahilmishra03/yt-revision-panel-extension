@@ -6,7 +6,14 @@
     <title>YouTube Revision Panel</title>
     <meta name="description" content="Mark important moments in YouTube playlist videos and revise them later using a clean, movable Revision Panel.">
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
+    <!-- Brand Favicon & Meta -->
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48x48.png">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#0f0f0f">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -72,12 +79,12 @@
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <div class="flex items-center gap-3">
-                    <div class="bg-accent/10 p-2 rounded-lg">
-                        <i class="fa-solid fa-lightbulb text-accent text-lg"></i>
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 p-1.5 transition-all duration-300 group-hover:scale-105 group-hover:bg-accent/20 group-hover:shadow-[0_0_16px_rgba(251,191,36,0.25)]">
+                        <img src="assets/logo-mark.png" alt="YT Revision Panel Logo" class="w-full h-full object-contain">
                     </div>
-                    <span class="font-bold text-xl tracking-tight text-white">YT Revision Panel</span>
-                </div>
+                    <span class="font-bold text-xl tracking-tight text-white group-hover:text-accent transition-colors">YT Revision Panel</span>
+                </a>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-center space-x-8">
                         <a href="#features" class="text-gray-300 hover:text-white transition px-3 py-2 text-sm font-medium">Features</a>
@@ -216,10 +223,10 @@
 
                     <div class="bg-ytCard p-8 rounded-2xl border border-white/5 text-center transition hover:-translate-y-2">
                         <div class="w-16 h-16 mx-auto bg-ytBlack rounded-full flex items-center justify-center border border-accent/30 mb-6 shadow-[0_0_15px_rgba(251,191,36,0.2)]">
-                            <span class="text-accent font-bold text-2xl">2</span>
+                            <img src="assets/logo-mark.png" alt="Mark Icon" class="w-8 h-8 object-contain">
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Click "Mark"</h3>
-                        <p class="text-gray-400 text-sm">Found a key concept? Hit the 💡 Mark button. We save the time.</p>
+                        <p class="text-gray-400 text-sm">Found a key concept? Hit the Mark button. We save the exact time.</p>
                     </div>
 
                     <div class="bg-ytCard p-8 rounded-2xl border border-white/5 text-center transition hover:-translate-y-2">
@@ -287,8 +294,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="text-center md:text-left">
-                    <div class="flex items-center gap-2 justify-center md:justify-start mb-2">
-                        <i class="fa-solid fa-lightbulb text-accent"></i>
+                    <div class="flex items-center gap-2.5 justify-center md:justify-start mb-2">
+                        <img src="assets/logo-mark.png" alt="YT Revision Panel Logo" class="w-6 h-6 object-contain">
                         <span class="font-bold text-lg text-white">YT Revision Panel</span>
                     </div>
                     <p class="text-gray-500 text-sm">

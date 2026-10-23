@@ -27,7 +27,8 @@ function injectMarkButton() {
 
   const btn = document.createElement("button");
   btn.id = "yt-revision-mark-btn";
-  btn.innerText = "💡 Mark";
+  const iconUrl = typeof chrome !== "undefined" && chrome?.runtime?.getURL ? chrome.runtime.getURL("icons/icon-32.png") : "";
+  btn.innerHTML = `<img src="${iconUrl}" style="width:18px;height:18px;object-fit:contain;vertical-align:middle;margin-right:6px;display:inline-block" onerror="this.outerHTML='💡 '"><span>Mark</span>`;
 
   Object.assign(btn.style, {
     position: "fixed",
@@ -111,7 +112,7 @@ function injectRevisionPanel() {
       cursor:move;
       user-select:none;
     ">
-      <span style="font-size:18px">💡</span>
+      <img src="${typeof chrome !== "undefined" && chrome?.runtime?.getURL ? chrome.runtime.getURL("icons/icon-32.png") : ""}" style="width:20px;height:20px;object-fit:contain" onerror="this.outerHTML='💡'">
       <span style="font-size:15px;font-weight:600">Revision Panel</span>
       <span id="rev-count" style="
         margin-left:auto;
